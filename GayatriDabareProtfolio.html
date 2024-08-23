@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Dabare - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #050f13; /* Light Sky Blue */
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: #020b13; /* Dark Sky Blue */
+            color: #b0d1eb;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #112b41;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: #020f18;
+        }
+
+        /* Section Headings */
+        section h2 {
+            background-color: #0b1923; /* Dark Sky Blue */
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Section Content */
+        section .content {
+            background-color: #b0e1f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        /* About Section */
+        #about img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #0a1014;
+        }
+
+        #about p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        /* Skills Section */
+        #skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            background: #264055; /* Dark Sky Blue */
+            color: #f4f7fa;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        #skills li:hover {
+            background-color: #364c5f;
+        }
+
+        /* Projects Section */
+        #projects .project {
+            margin-bottom: 20px;
+        }
+
+        #projects .project img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            border: 3px solid #080f14;
+        }
+
+        #projects .project img:hover {
+            transform: scale(1.05);
+        }
+
+        #projects .project h3 {
+            font-size: 1.5em;
+            color: #463f3f;
+            margin-top: 10px;
+        }
+
+        #projects .project p {
+            font-size: 1em;
+            color: #030000;
+        }
+
+        /* Resume Section */
+        #resume a {
+            display: inline-block;
+            background: #202a33;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        #resume a:hover {
+            background-color: #1e2c35;
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1em;
+            color: #1a1919;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #253441;
+            color: #fff;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Gayatri Dabare</h1>
+        <p>Student of Government College Of Engineering, Chhatrapati Sambhaji Nagar | Siemens Scholar</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+            <img src="gaaay.jpg" alt="Gayatri Dabare">
+            <p>
+                I am a student at the Government College Of Engineering, Chhatrapati Sambhaji Nagar, and a Siemens Scholar. 
+                I have a passion for web development and a solid understanding of computer languages like C and Java. 
+                I am fluent in Marathi, English, and Hindi, and currently working on my German language and vocabulary.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="content">
+            <li>Basic Understanding of C and Java</li>
+            <li>Web Development (HTML, CSS, JS)</li>
+            <li>Languages: Marathi, English, Hindi, and learning German</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="content">
+            <div class="project">
+                <h3>Landing Page</h3>
+                <a href="http://127.0.0.1:5500/landingProject.html">Project 1</a>
+                <p>My first web development project, a landing page titled "Stay Updated on the Latest Engineering Innovations," is now complete. This page highlights key trends, upcoming events, and innovations in engineering, offering concise insights for professionals and enthusiasts alike.</p>
+            </div>
+            <div class="project">
+                <h3>Calculator</h3>
+                <a href="http://127.0.0.1:5500/calculate.html"> Project 2</a>
+                <p>Advanced Calculator Project: Developed a user-friendly web-based calculator using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations, floating-point calculations, and complex expressions with parentheses. Implemented a clear, responsive design and ensured accurate real-time equation display and results. This project demonstrates proficiency in frontend development and interactive web applications.
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="content">
+            <a href="Your paragraph text.pdf" download>Download My Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="content">
+            <p>Email: <a href="mailto:gayatridabare@gmail.com">gayatridabare@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919689934743">+91 9689934743</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gayatri Dabare. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Change header background color on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.style.backgroundColor = window.scrollY > 50 ? '#333' : '#4682B4';
+            header.style.color = window.scrollY > 50 ? '#fff' : '#fff';
+        });
+
+        // Smooth scroll to sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
